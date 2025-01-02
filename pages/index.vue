@@ -2,6 +2,7 @@
   <div>
     <h2>Hello world!</h2>
     <p>It is currently {{ date }}</p>
+    <p v-if="new Date().getHours() == 3">go to sleep!!</p>
   </div>
 </template>
 
@@ -9,13 +10,22 @@
   const today = new Date();
   const date = ref();
 
-  const hours = today.getHours();
-  const minutes = today.getMinutes();
-  const seconds = today.getSeconds();
+  let hours = today.getHours();
+  let minutes = today.getMinutes();
+  let seconds = today.getSeconds();
 
   const ampm = hours < 12 ? "AM" : "PM"
 
-  const now = hours + ":" + minutes + ":" + seconds + " " + ampm
+  if (ampm == "PM") {
+    hours = hours - 12;
+  } else {
+    // i hate if statements in if statements
+    if (hours == 0) {
+      hours = hours + 12;
+    }
+  };
 
-  date.value = now
+  const now = hours + ":" + minutes + ":" + seconds + " " + ampm;
+
+  date.value = now;
 </script>
