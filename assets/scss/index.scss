@@ -19,4 +19,12 @@ header {
         background-color: white;
         color: black;
     }
+    a#login {
+        float: right;
+        background-color: lightgreen;
+    }
+    a#login:hover {
+        background-color: white;
+        color: black;
+    }
 }

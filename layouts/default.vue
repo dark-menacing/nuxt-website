@@ -1,9 +1,18 @@
+<script lang="ts" setup>
+  import '/assets/scss/index.scss';
+</script>
+
 <template>
   <div>
     <header>
-      <NuxtLink to="/">
-        Home
-      </NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink>
+      <AuthState v-slot="{loggedIn}">
+        <NuxtLink v-if="loggedIn" to="/settings">Settings</NuxtLink>
+        <div v-else>
+          <NuxtLink id="login" to="/login">Login</NuxtLink>
+          <NuxtLink style="float: right;" to="/register">Register</NuxtLink>
+        </div>
+      </AuthState>
     </header>
     <br />
     <slot />
@@ -15,7 +24,3 @@
     </footer>
   </div>
 </template>
-
-<script lang="ts" setup>
-  import '/assets/scss/index.scss';
-</script>

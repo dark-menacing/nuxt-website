@@ -7,18 +7,24 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@nuxt/image": "1.8.1",
     "@nuxthub/core": "0.8.10",
+    "drizzle-orm": "^0.38.3",
     "nuxt": "^3.15.0",
+    "nuxt-auth-utils": "0.5.7",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "drizzle-kit": "^0.30.1",
     "sass": "^1.83.0",
+    "typescript": "^5.7.2",
     "unenv": "^1.10.0",
+    "vue-tsc": "^2.2.0",
     "wrangler": "^3.99.0"
   }
 }
