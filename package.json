@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@nuxt/icon": "1.11.0",
+    "@nuxt/image": "1.10.0",
+    "@nuxt/kit": "^3.16.2",
+    "@nuxthub/core": "0.8.22",
+    "drizzle-orm": "^0.41.0",
+    "nuxt": "^3.16.2",
+    "nuxt-auth-utils": "0.5.17",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@iconify-json/ri": "^1.2.5",
+    "drizzle-kit": "^0.30.6",
+    "wrangler": "^4.7.0"
+  }
+}

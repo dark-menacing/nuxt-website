@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1743293971723,
+      "tag": "0000_clammy_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1743615581272,
+      "tag": "0001_cold_patch",
+      "breakpoints": true
+    }
+  ]
+}
